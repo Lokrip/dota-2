@@ -1,1 +1,67 @@
-src/inde.txt
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore virtual environment directories
+env/
+venv/
+
+# Ignore node_modules if using Node.js
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.class
+*.o
+*.so
+
+# Ignore editor and IDE configuration files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore OS-specific files
+.DS_Store
+*.swp
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.old
+
+# Ignore build directories
+dist/
+build/
+
+# Ignore package files
+*.egg
+*.egg-info/
+
+# Ignore test result directories
+.coverage
+.tox/
+
+# Ignore documentation directories
+docs/_build/
+
+# Ignore configuration files for tools
+*.yml
+*.yaml
+
+# Ignore specific files in your project
+project/src/index.txt
+
+# Ignore everything in src/assets except .svg files
+project/src/assets/*
+!project/src/assets/*.svg
