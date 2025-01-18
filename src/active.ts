@@ -1,5 +1,5 @@
 const ActiveInit = (function(){
-    const add_active = (container, method, classMethod) => {
+    const add_active = (container: HTMLElement, method: string, classMethod: string) => {
         switch (method) {
             case 'add':
                 container.classList.add(classMethod)

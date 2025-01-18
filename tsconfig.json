@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true, //Этот параметр позволяет использовать синтетические импорты по умолчанию для модулей, которые не экспортируют default. Он помогает работать с модулями, которые используют CommonJS или другие типы экспортов, позволяя импортировать их, как если бы они экспортировали default. Например, это позволяет использовать import x from 'module', даже если модуль не имеет явного экспорта default.
+    "esModuleInterop": true // Этот параметр включает поддержку межмодульной совместимости между модулями CommonJS и ES6. Включение esModuleInterop помогает TypeScript правильно обрабатывать импорты из CommonJS-модулей, обеспечивая поддержку синтаксиса import для таких модулей. Это позволяет использовать такие импорты, как import fs from 'fs', даже если модуль fs экспортирует свою функциональность через module.exports (что является типичным для CommonJS).
+  },
+  "ts-node": {
+    //тоесть для ts-node мы переопределяем compilerOptions module на CommonJS
+    "compilerOptions": {
+      "module": "CommonJS",
+    }
+  }
+}
