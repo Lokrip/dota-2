@@ -21,7 +21,7 @@ Ensure that you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Lokrip/Dota-2-Copy.git
+   git clone https://github.com/Lokrip/dota-2
 
    npm install
 
